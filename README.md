@@ -1,0 +1,3 @@
+Jag har valt att skapa en kopia av Tesla.com's hemsida (https://www.tesla.com/).
+
+Avgränsningar: När det gäller interaktivitet har jag valt att avgränsa min mobila navigeringsmeny genom att den inte öppnar upp navigeringsmenyn på mobila skärmar eftersom på Tesla's hemsida använder de javascript för att göra detta och vi ska enbart använda HTML och CSS. Samma gäller navigeringsmenyn på desktopversionen.

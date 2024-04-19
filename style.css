@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.nav-container {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 50px;
+  height: 56px;
+  color: black;
+  z-index: 1000;
+  position: relative;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+  font-size: 15px;
+}
+
+.nav-container ul li {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.nav-container ul li:hover,
+.nav-container .icons i:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+.nav-container .icons {
+  display: flex;
+  font-size: 25px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-container .icons i {
+  border-radius: 50%;
+  padding: 3px;
+  transition: 0.5s;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  flex-direction: column;
+}
+
+.pages li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.pages li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.page-info h1 {
+  letter-spacing: 1px;
+  font-size: 40px;
+  color: black;
+}
+
+.page-info h1,
+.page-info h3 {
+  font-weight: 500;
+}
+
+.page-info.model-x {
+  color: #333;
+}
+
+.page-info.model-x p {
+  font-size: 12px;
+}
+
+.page-footer .buttons {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.page-footer .buttons button {
+  font-size: 13px;
+  padding: 7px 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.page-footer .buttons button:first-child {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.page-footer .buttons button:last-child {
+  background-color: rgba(34, 34, 34, 0.65);
+  color: white;
+}
+
+.page-footer .buttons.inverted button:first-child {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #333;
+}
+
+.page-footer .buttons.inverted button:last-child {
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+}
+
+.page-footer p,
+.page-footer a {
+  font-size: 12px;
+  color: #393c41;
+  padding-bottom: 40px;
+}
+
+#modelx-info {
+  color: #fff;
+}
+
+#modelx-info a {
+  color: #fff;
+}
+
+.page-footer .buttons.demo-drive button {
+  background-color: rgba(244, 244, 244, 1);
+  color: #393c41;
+  border: 3px solid #fff;
+  font-weight: 500;
+}
+
+#first-section {
+  margin-top: -56px;
+}
+
+#last-section {
+  padding-bottom: 90px;
+}
+
+#header-nav-button {
+  background-color: #d5e5f1;
+  display: none;
+  border: none;
+  padding: 6px 17px;
+  border-radius: 4px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 120px;
+  margin-top: -120px;
+  padding-bottom: 25px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+footer nav {
+  text-align: center;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav ul li {
+  margin: 0 10px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #d0d1d2;
+  font-size: 13px;
+}
+
+.tesla-logo {
+  width: 120px;
+  height: 24px;
+  color: black;
+}
+
+@media (max-width: 1200px) {
+  #header-nav-button {
+      display: block;
+  }
+  .nav-container ul {
+      display: none;
+  }
+  .nav-container .icons {
+      display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 0;
+    background: black;
+    padding: 23px 0;
+  }
+  footer nav ul {
+    flex-direction: column;
+  }
+  .hidden-footer-nav {
+    display: none;
+  }
+  footer nav ul li {
+    margin: 2px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-footer .buttons {
+      flex-direction: column;
+      gap: 10px;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+  }
+  .page-footer {
+      padding: 0 25px;
+  }
+}

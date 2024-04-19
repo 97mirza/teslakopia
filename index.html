@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Tesla Website</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <a href="index.html">
+        <svg class="tesla-logo" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path></svg>
+      </a>
+      <ul>
+        <li>Vehicles</li>
+        <li>Energy</li>
+        <li>Charging</li>
+        <li>Discover</li>
+        <li>Shop</li>
+      </ul>
+      <div class="icons">
+        <i class="bx bx-help-circle"></i>
+        <i class="bx bx-globe"></i>
+        <i class="bx bx-user-circle"></i>
+      </div>
+      <button id="header-nav-button">
+        <span>Menu</span>
+      </button>
+    </nav>
+
+    <ul class="pages">
+      <li id="first-section">
+        <img src="imgs/TeslaModelY.avif" alt="Model Y"/>
+        <div id="model-y-info" class="page-info">
+          <h1>Model Y</h1>
+          <p>From $31,490*</p>
+          <sub>After Federal Tax Credit & Est. Gas Savings</sub>
+        </div>
+        <div id="model-y-footer" class="page-footer">
+          <div class="buttons">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+          </div>
+          <p>
+            *Price before incentives is $44,990, excluding taxes and fees. Subject to change.
+            <br>
+            <a href="#">Learn about est. gas savings</a>
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <img src="imgs/TeslaModel3.avif" alt="Model 3"/>
+        <div class="page-info">
+          <h1>Model 3</h1>
+          <p>From $299/mo*</p>
+          <sub>Est. Lease Price Before Gas Savings</sub>
+        </div>
+        <div class="page-footer">
+          <div class="buttons inverted">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+          </div>
+          <p>
+            *Excludes taxes and fees with price subject to change.Available in select states.
+            <br>
+            <a href="#">See Details</a>
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <img src="imgs/TeslaModelX.avif" alt="Model X"/>
+        <div class="page-info model-x">
+          <h1>Model X</h1>
+          <p>From $65,990*</p>
+          <p>After Federal Tax Credit & Est. Gas Savings</p>
+        </div>
+        <div class="page-footer">
+          <div class="buttons inverted">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+          </div>
+          <p id="modelx-info">
+            *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change<br />
+            <a href="#">Learn about est. gas savings.</a>
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <img src="imgs/TeslaModelS.avif" alt="Model S"/>
+        <div class="page-info model-x">
+          <h1>Model S</h1>
+          <p>From $68,490*</p>
+          <p>After Est. Gas savings</p>
+        </div>
+        <div class="page-footer">
+          <div class="buttons inverted">
+            <button>Order Now</button>
+            <button>Demo Drive</button>
+          </div>
+          <p>
+            *Price before incentives and savings is $74,990, excluding taxes and fees. Subject to change<br />
+            <a href="#">Learn about est. gas savings.</a>
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <img src="imgs/TeslaAccessories.avif" alt="Tesla Accessories">
+        <div class="page-info">
+          <h1>Accessories</h1>
+        </div>
+        <div class="page-footer" id="last-section">
+          <div class="buttons demo-drive">
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <footer>
+      <nav>
+          <ul>
+              <li><a href="#">Tesla © 2024</a></li>
+              <li><a href="#">Privacy &amp; Legal</a></li>
+              <li><a href="#">Vehicle Recalls</a></li>
+              <li class="hidden-footer-nav"><a href="#">Contact</a></li>
+              <li><a href="#">News</a></li>
+              <li class="hidden-footer-nav"><a href="#">Get Updates</a></li>
+              <li class="hidden-footer-nav"><a href="#">Locations</a></li>
+          </ul>
+      </nav>
+  </footer>
+
+  </body>
+</html>
