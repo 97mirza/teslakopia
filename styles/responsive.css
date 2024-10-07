@@ -1,12 +1,14 @@
+/* Styling för responsiviteten på hemsidan för olika skärmstorlekar */
+
 @media (max-width: 1200px) {
   #header-nav-button {
-      display: block;
+    display: block;
   }
   .nav-container ul {
-      display: none;
+    display: none;
   }
   .nav-container .icons {
-      display: none;
+    display: none;
   }
 }
 
@@ -34,12 +36,20 @@
 
 @media (max-width: 600px) {
   .page-footer .buttons {
-      flex-direction: column;
-      gap: 10px;
-      justify-content: flex-start;
-      margin-bottom: 15px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
   }
   .page-footer {
-      padding: 0 25px;
+    padding: 0 25px;
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
