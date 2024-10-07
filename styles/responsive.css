@@ -34,6 +34,16 @@
   }
 }
 
+.desktop-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mobile-image {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .page-footer .buttons {
     flex-direction: column;
